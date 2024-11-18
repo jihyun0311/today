@@ -1,0 +1,425 @@
+*{
+  box-sizing: border-box;
+}
+
+/* 기본 box-sizing 설정 */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.conta-main{
+  margin: 0px 15px;
+  padding-top: 40px;
+}
+
+.container{
+  max-width: 360px; /* 기존 최대 너비 유지 */
+  margin: auto; /* 가운데 정렬 */
+  padding: 0;
+}
+
+.custom-logo-img{
+  width: 88px;
+  height: 31px;
+  padding: 0;
+}
+
+.custom-main{
+  max-width: 360px;
+  width: 100%;
+  padding: 60px 0;
+  display: block;
+  margin: 0;
+}
+
+.jointe-dv{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: flex-start; 
+  width: 100%; 
+}
+
+.custom-jointext{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.custom-sns-div{
+  margin: 0;
+  padding: 0;
+}
+
+.custom-sns-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 20px 0;
+  border-bottom: 1px;
+}
+
+.custom-sns-text{
+  text-align: center;
+  color: #757575;
+  font-size: 12px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.custom-sns-icon{
+  padding-bottom: 20px;
+}
+
+.custom-sns{
+  margin: 0px 11px;
+  border-radius: 100%;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-hr{
+  width: 360px;
+  border: none; /* 기본 border 제거 */
+  height: 1px; /* 원하는 두께 설정 */
+  background-color: rgb(237, 237, 237); /* 배경색으로 선 색상 설정 */
+  margin: 10px 0;
+  opacity: 0.5; /* 투명도 설정 */
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-container label {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f3438;
+  letter-spacing: -0.3px;
+}
+
+.email-input-wrapper {
+  display: flex;
+  align-items: center; /* 수직 정렬 */
+  margin-bottom: 16px;
+}
+
+.email-input-wrapper input,
+.email-input-wrapper select {
+  width: 100%; /* 동일한 너비 */
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* padding 포함한 박스 크기 계산 */
+  height: 40px; /* 동일한 높이 */
+}
+
+.email-input-wrapper span {
+  margin: 0 8px; /* 양옆에 적절한 간격 */
+  font-size: 16px;
+  vertical-align: middle; /* 수직 정렬 */
+}
+
+.email-verify {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  border: none;
+  background-color: #f7f8fa;
+  color: #c2c8cc;
+  border-radius: 4px;
+  cursor:pointer;
+  font-size: 17px;
+}
+
+.email-verify:disabled {
+  background-color: #f2f2f2;
+  color: #999;
+  cursor: pointer;
+}
+
+#email{
+  font-size: 15px;
+}
+
+#email2{
+  margin-bottom: 30px;
+  color: #c2c8cc;
+}
+
+.form-control{
+  height: 40px;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-control::placeholder{
+  color: #c2c8cc;
+}
+
+option{
+  font-weight: normal;
+  display: block;
+  padding-block-start: 0;
+  padding-block-end: 1px;
+  min-block-size: 1.2em;
+  white-space: nowrap;
+}
+
+.pass-con {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pass-con-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f3438;
+  margin-bottom: 12px;
+}
+
+.pass-con-text2 {
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+#password, #password2, #nicname{
+  padding: 8px 15px;
+  margin-bottom: 30px;
+}
+
+.nic-con{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nic-con-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f3438;
+  margin-bottom: 12px;
+}
+
+.nic-con-text2 {
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.agr-text{
+  font-size: 16px;
+  font-weight: 700;
+  color: #2f3438;
+  margin-bottom: 12px;
+}
+
+.agr-hr{
+  width: 360px;
+  border: none; /* 기본 border 제거 */
+  height: 1px; /* 원하는 두께 설정 */
+  background-color: rgb(237, 237, 237); /* 배경색으로 선 색상 설정 */
+  margin: 18px 0;
+  opacity: 0.5; /* 투명도 설정 */
+}
+
+
+.agreement-container {
+  width: 100%;
+  max-width: 100%; /* 화면 가로에 맞춰서 꽉 차게 설정 */
+  padding: 0;
+  margin: 0 auto; /* 가운데 정렬 */
+}
+
+/* 약관 동의 체크박스 스타일 */
+.agreement-container .border {
+  width: 100%;
+  padding: 18px;
+  border: #EAEDEF 1px solid;
+  margin: 0;
+}
+
+/* 개별 체크박스 간격 및 스타일 */
+.form-check {
+  margin-bottom: 15px;
+}
+
+.form-check-input{
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease, border 0.3s ease;
+  appearance: none;
+  background-color: white; /* 기본 배경색 */
+  border: 1px solid #ccc; /* 기본 테두리 색상 */
+  border-radius: 4px; /* 모서리 둥글게 */
+}
+
+.form-check-label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 필수 및 선택 텍스트 스타일링 */
+.text-danger {
+  color: #009FCE !important; 
+  padding-left: 2px;
+  font-size: 12px;
+}
+
+.text-muted {
+  color: #828C94;
+  padding-left: 2px;
+  font-size: 12px;
+}
+
+.form-check-input:checked {
+  background-color: #7ec3fc; /* 체크 시 배경색 */
+  border: none;
+}
+
+.form-check-input:checked::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px; /* 체크 표시의 너비 */
+  height: 20px; /* 체크 표시의 높이 */
+  transform: rotate(45deg) translate(-50%, -50%);
+  animation: draw-check 0.3s forwards; /* 체크 표시 애니메이션 */
+}
+
+@keyframes draw-check {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0; /* 처음에 보이지 않도록 설정 */
+  }
+  
+  100% {opacity: 1;
+    width: 10px; /* 최종 너비 */
+    height: 20px; /* 최종 높이 */
+  }
+}
+
+.captcha-container {
+  width: 100%; /* 컨테이너 크기만큼 */
+  height: 100px; /* 높이 설정 */
+  background-color: #f7f7f7; /* 연한 회색 배경색 */
+  display: flex;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  margin: 30px 0; /* 아래 여백 */
+  padding: 0 16px; /* 좌우 패딩 */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c2c8cc;
+  border-radius: 4px;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  height: 100%;
+}
+
+.captcha-checkbox {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px; /* 체크박스와 텍스트 간격 */
+  cursor: pointer;
+}
+
+/* 체크박스가 체크되었을 때의 스타일 */
+.captcha-checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: transparent; /* 배경색 없음 */
+  border: 2px solid #28a745; /* 초록색 테두리 */
+  border-radius: 4px; /* 약간 둥근 테두리 */
+}
+
+/* 텍스트 스타일 */
+.captcha-label {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #2f3438; /* 텍스트 색상 */
+  cursor: pointer; /* 텍스트 클릭 가능하도록 */
+}
+
+.joinend {
+  display: flex; /* Flexbox 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  width: 360px;
+  height: 50px;
+}
+
+.join-submit {
+  width: 100%;
+  height: 50px;
+  padding: 11px 10px; /* 패딩 설정 */
+  font-size: 17px; /* 폰트 크기 */
+  line-height: 26px; /* 줄 높이 */
+  background-color: #35c5f0; /* 배경색 */
+  border-color: #35c5f0; /* 테두리 색상 */
+  color: #fff; /* 글자 색상 */
+  font-weight: 700; /* 폰트 두께 */
+  text-decoration: none; /* 밑줄 제거 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  transition: color .1s, background-color .1s, border-color .1s; 
+  border: 1px solid transparent; /* 기본 테두리 설정 */
+  border-radius: 4px; /* 모서리 둥글게 */
+  cursor: pointer; /* 커서 모양 */
+  user-select: none; /* 텍스트 선택 비활성화 */
+  display: inline-block; /* 인라인 블록으로 설정 */
+  margin: 0; /* 마진 초기화 */
+}
+
+.join-submit:hover {
+  background-color: #34a9df;
+  border-color: #34a9df;
+}
+
+.youid {
+  color: #424242; /* 글자 색상 */
+  font-size: 15px; /* 폰트 크기 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+  margin-top: 30px; /* 위쪽 마진 */
+}
+
+.youhaveid {
+  text-decoration: underline; /* 밑줄 */
+  font-weight: bold; /* 폰트 두께 */
+  display: inline-block; /* 인라인 블록으로 설정 */
+  padding-left: 10px; /* 왼쪽 패딩 */
+  cursor: pointer; /* 커서 모양 */
+  color: inherit; /* 부모 색상 상속 */
+  transition: color 0.3s; /* 색상 변화 트랜지션 */
+}
+
+.youhaveid:hover {
+  color: #a5a5a5; /* 마우스 오버 시 회색으로 변경 */
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 라이프스타일 슈퍼앱, 오늘의집</title>
+
+    <!-- 부트스트랩 5.2.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>    
+    <!-- 부트스트랩 5.2.3 -->   
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/3N1hHPZJ/image.jpg"/>
+    <link rel="stylesheet" href="joinstyles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conta-main">
+        <div class="d-flex justify-content-start custom-logo">
+            <a href="/오늘의집_지현/mypage/myp.html" class="custom-logo-url">
+                <img src="https://i.postimg.cc/NM1Ydy9X/image.png" alt="로고" class="custom-logo-img container d-flex flex-column justify-content-center align-items-center">
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center custom-main">
+            <div class="jointe-dv">
+                <h1 class="custom-jointext">회원가입</h1>
+            </div>
+
+            <div class="d-flex custom-sns-div">
+                <div class="custom-sns-text">
+                    SNS계정으로 간편 로그인/회원가입
+                </div>
+                <div class="custom-sns-icon d-flex justify-content-center align-items-center">
+                    <a datatype="facebook" class="sns-face custom-sns" href="#">
+                        <img src="https://i.postimg.cc/sXSfb68v/facebook.png" alt="facebook" width="48px" height="48px">
+                    </a>
+                    <a datatype="kakao" class="sns-kakao custom-sns" href="#">
+                        <img src="https://i.postimg.cc/RZFSvVyr/kakao-talk.png" alt="kakao-talk" width="48px" height="48px">
+                    </a>
+                    <a datatype="naver" class="sns-naver custom-sns" href="#">
+                        <img src="https://i.postimg.cc/QMDhwPVF/naver.png" alt="naver" width="48px" height="48px">
+                    </a>
+                </div>
+                <hr class="custom-hr">
+            </div>
+
+            <form class="d-flex flex-column justify-content-center align-items-center">
+                <div class="email-container">
+                    <label for="email">이메일</label>
+                    <div class="email-input-wrapper">
+                        <input type="text" id="email" class="form-control" placeholder="이메일"/>
+                        <span style="color: #dbdbdb; margin-left: 7px;">@</span>
+                        <select class="form-control" id="emailDomain">
+                            <option selected value disabled>선택해주세요</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="nate.com">nate.com</option>
+                        </select>
+                    </div>
+                    <div class="input-but">
+                        <button type="button" class="email-verify" id="email2" disabled>이메일 인증하기</button>
+                    </div>
+                </div>
+            
+                <div class="pass-con">
+                    <label for="password" class="pass-con-text">비밀번호</label>
+                    <div class="pass-con-text2">영문, 숫자를 포함한 8자 이상의 비밀번호를 입력해주세요.</div>
+                    <input type="password" id="password" class="form-control" placeholder="비밀번호"/>
+                </div>
+                <div class="pass-con">
+                    <label for="password" class="pass-con-text">비밀번호 확인</label>
+                    <input type="password" id="password2" class="form-control" placeholder="비밀번호"/>
+                </div>
+
+                <div class="nic-con">
+                    <label for="nicname" class="nic-con-text">닉네임</label>
+                    <div class="nic-con-text2">다른 유저와 겹치지 않도록 입력해주세요. (2~20자)</div>
+                    <input type="nicname" id="nicname" class="form-control" placeholder="별명 (2~20자)"/>
+                </div>
+
+                <div class="agreement-container container">
+                    <div class="agr-text">약관동의</div>
+                    <div class="border p-3 rounded">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="agreeAll">
+                            <label class="form-check-label fw-bold" for="agreeAll">
+                                전체동의 <span class="text-muted">선택항목에 대한 동의 포함</span>
+                            </label>
+                        </div>
+                        <hr class="agr-hr">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="ageCheck">
+                            <label class="form-check-label" for="ageCheck">
+                                만 14세 이상입니다 <span class="text-danger">(필수)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="termsCheck">
+                            <label class="form-check-label" for="termsCheck">
+                                이용약관 <span class="text-danger">(필수)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="privacyCheck">
+                            <label class="form-check-label" for="privacyCheck">
+                                개인정보수집 및 이용동의 <span class="text-danger">(필수)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="marketingCheck">
+                            <label class="form-check-label" for="marketingCheck">
+                                개인정보 마케팅 활용 동의 <span class="text-muted">(선택)</span>
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="eventCheck">
+                            <label class="form-check-label" for="eventCheck">
+                                이벤트, 쿠폰, 특가 알림 메일 및 SMS 등 수신 <span class="text-muted">(선택)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="captcha-container">
+                    <div class="captcha-box">
+                        <input type="checkbox" id="captchaCheck" class="captcha-checkbox">
+                        <label for="captchaCheck" class="captcha-label">로봇이 아닙니다.</label>
+                    </div>
+                </div>
+                
+                <div class="joinend">
+                    <button class="join-submit" >회원가입하기</button>
+                </div>
+            </form>
+            <p class="youid">이미 아이디가 있으신가요?
+                <a href="../login/index.html" class="youhaveid">로그인</a>
+            </p>
+        </div><!--중앙정렬-->
+    </div><!--컨테이너-->
+</body>
+</html>

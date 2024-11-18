@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous">
+    </script>    
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://i.postimg.cc/3N1hHPZJ/image.jpg"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<link href="mypstyles.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="layout">
+  <div class="header-top">
+  <header class="header container-fluid">
+      <div class="header-top2">
+        <div class="top-logo">
+          <a class="top-logo-a" href="#">
+            <img src="https://i.postimg.cc/jjy3J51Z/image.png" alt="로고" class="top-logo-img">
+          </a>
+        </div>
+        <div class="top-list-all">
+          <div class="top-list">
+            <a class="top-list-item" href="#">
+              <span class="top-list-span">커뮤니티</span>
+            </a>
+          </div>
+          <div class="top-list">
+            <a class="top-list-item" href="#">
+              <span class="top-list-span">쇼핑</span>
+            </a>
+          </div>
+          <div class="top-list">
+            <a class="top-list-item" href="#">
+              <span class="top-list-span">인테리어/생활</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="top-bar">
+          <div class="search-container">
+            <div class="search-box">
+              <img src="https://i.postimg.cc/ydNzscfw/image.png" alt="검색 아이콘" class="search-icon" style="width: 29px; height: 29px;">
+              <input type="text" class="search-input" placeholder="통합검색">
+            </div>
+          </div>
+          
+          <div class="icon-container">
+            <a href="#" class="icon-link">
+              <img src="https://i.postimg.cc/FRSw9pyC/image.png" alt="스크랩" class="icon-img" style="height: 22px; width: 22px;">
+            </a>
+            <a href="#" class="icon-link">
+              <img src="https://i.postimg.cc/vm6tRP94/image.png" alt="알람" class="icon-img">
+            </a>
+            <a href="#" class="icon-link">
+              <img src="https://i.postimg.cc/dtwgY8Ln/image.png" alt="장바구니" class="icon-img">
+            </a>
+
+            <a href="../login/index.html" class="icon-link">
+              <img src="https://ifh.cc/g/WnyNZd.png" alt="프로필" class="profile-img">
+            </a>
+          </div>
+          <button class="write-btn">글쓰기</button>
+        </div>
+      </div>
+    </header>
+    <hr class="header-hr">
+    </div>
+  
+  <div class="content">
+    <div class="mid-content">
+      <div class="mid-list">
+        <ul style="transform: translateX(0px);" class="mid-ul">
+          <li class="page-nav-bitem">
+            <a class="active" href="#">프로필</a>
+          </li>
+          <li class="page-nav-bitem">
+            <a class="active1" href="../order/order.html">나의 쇼핑</a>
+          </li>
+          <li class="page-nav-bitem">
+            <a class="active1" href="#">나의 리뷰</a>
+          </li>
+          <li class="page-nav-bitem">
+            <a class="active1" href="#">설정</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-nav-detail">
+        <ul class="deta-ul" style="transform: translateX(0px);">
+          <li class="page-nav-item">
+            <a class="active" href="#">모두보기</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">사진</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">집들이</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">노하우</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">질문과답변</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">스크랩북</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="active1" href="#">좋아요</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="mian">
+        <div class="main-profile">
+          <div class="big-profile">
+            <div class="big-profile2">
+              <div class="profile-title">
+                <div class="pro-share">
+                  <button type="button" class="pro-share-but">
+                    <img src="https://img.icons8.com/small/96/share.png" alt="share" class="pro-seare-but-img"/> 
+                  </button>
+                </div>
+
+                <div class="pro-title">
+                  <div class="pro-title-img">
+                    <img class="pro-tit-img" src="https://ifh.cc/g/WnyNZd.png" alt="프로필이미지">
+                  </div>
+                
+                <div class="pro-title-text">
+                  <div class="pro-title-nic">nickname</div>
+                </div>
+                <div class="pro-tit-text">
+                  <dl class="pro-tit-follo">
+                    <dt class="follower">팔로워</dt>
+                    <dd class="follower-num">
+                      <a class="follower-number" href="#">0</a>
+                    </dd>
+                    <dt class="following">팔로잉</dt>
+                    <dd class="following-num">
+                      <a class="following-number" href="#">0</a>
+                    </dd>
+                  </dl>
+                  <div class="follow-set">
+                    <a class="setting" href="#">설정</a>
+                  </div>
+                </div>
+                </div>
+
+                <div class="pro-3-img">
+                  <div class="pro-3-img-padd">
+                    <a class="pro-3-scr" href="#">
+                      <div class="pro-scr">
+                        <img src="https://i.postimg.cc/FRSw9pyC/image.png" alt="스크랩" class="profile-1-img">
+                      </div>
+                      <div class="profile-3-text">스크랩북</div>
+                      <div class="profile-3-num">0</div>
+                    </a>
+                    <a class="pro-3-scr" href="#">
+                      <div class="pro-scr">
+                        <img src="https://img.icons8.com/ios/100/like--v1.png" alt="좋아요" class="profile-2-img">
+                      </div>
+                      <div class="profile-3-text">좋아요</div>
+                      <div class="profile-3-num">0</div>
+                    </a>
+                    <a class="pro-3-scr" href="#">
+                      <div class="pro-scr">
+                        <img src="https://img.icons8.com/parakeet-line/100/ticket.png" alt="내쿠폰" class="profile-3-img">
+                      </div>
+                      <div class="profile-3-text">내쿠폰</div>
+                      <div class="profile-3-num">0</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-foot">
+                <a class="pro-foot-text">
+                  <span>크리에이터
+                    <span class="pro-foot-text2">수익화 프로그램</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="blank"></div>
+
+        <div class="main-con">
+          <div class="main-con-text">
+            <div>
+              <section class="picture">
+                <div class="pic-title">
+                  <h1 class="pic-title-text">사진
+                    <span class="pic-title-num">0</span>
+                  </h1>
+                </div>
+                <a class="pic-content">
+                  <img src="https://img.icons8.com/ios-glyphs/90/plus-math.png" alt="+" style="width: 16px; height: 16px;" class="pic-img"> 첫 번째 사진을 올려보세요
+                </a> 
+              </section>
+
+              <section class="gohome">
+                <div class="gohome-title">
+                  <h1 class="gohome-title-text">집들이
+                    <span class="gohome-title-num">0</span>
+                  </h1>
+                </div>
+                <a class="gohome-content">
+                  <img src="https://img.icons8.com/ios-glyphs/90/plus-math.png" alt="+" style="width: 16px; height: 16px;" class="pic-img">첫 번째 
+                  집들이
+                  를 올려보세요
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="layout-footet">
+    <div class="footer-container container">
+    <div class="footer-padd">
+      <div class="footer-1">
+        <div class="footer-1-customer">
+          <a href="#" class="footer-1-customer-a">고객센터
+            <span class="footer-1-cus"></span>
+          </a>
+        </div>
+
+        <div class="footer-1-tell">
+          <a href="tel : 010-4115-2161" class="footer-1-call">010-4115-2161</a>
+          <time datetime="09:00" class="footer-1-st">09:00</time>~
+          <time datetime="18:00" class="footer-1-ed">18:00</time>
+        </div>
+
+        <div class="footer-1-notice">
+          <div class="foot-not-1">평일: 전체 문의 상담</div>
+          <div class="foot-not-1">토요일, 공휴일: 오늘의집 직접배송 주문건 상담</div>
+          <div class="foot-not-1">일요일: 휴무</div>
+        </div>
+
+        <div class="foot-sangdam">
+          <button class="foot-sangdam-kakao">카톡 상담(평일 09:00~18:00)</button>
+          <a href="#" class="foot-sangdam-em">이메일 문의</a>
+        </div>
+      </div>
+
+      <div class="foot-1"></div>
+
+      <div class="footer-2">
+        <a href="#" class="footer-2-mini">회사소개</a>
+        <a href="#" class="footer-2-mini">채용정보</a>
+        <a href="#" class="footer-2-mini">이용약관</a>
+        <a href="#" class="footer-2-mid">개인정보 처리방침</a>
+        <a href="#" class="footer-2-mini">공지사항</a>
+        <a href="#" class="footer-2-mini">안전거래센터</a>
+        <a href="#" class="footer-2-mini">입점신청</a>
+        <a href="#" class="footer-2-mini">제휴/광고 문의</a>
+        <a href="#" class="footer-2-mini">시공파트너 안내</a>
+        <a href="#" class="footer-2-mid">파트너 개인정보 처리방침</a>
+        <a href="#" class="footer-2-mini">상품광고 소개</a>
+        <a href="#" class="footer-2-mini">고객의 소리</a>
+      </div>
+
+      <div class="foot-2"></div>
+
+      <div class="footer-3">
+        <div class="footer-3-infor">
+          <div class="footer-3-infor2">
+            <div class="footer-3-company">
+              <span class="footer-3s">|</span>
+              (주)버킷플레이스
+            </div>
+            <div class=" footer-3-name">
+              <span class="footer-3s">|</span>
+              대표이사 이승재
+            </div>
+            <div class="footer-address">
+              <span class="footer-3s">|</span>
+              <address class="foot-addr">서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층</address>
+            </div>
+            <div class="footer-3-ema">
+              <span class="footer-3s">|</span>
+              <a href="#" class="foot-3-em">contact@bucketplace.net</a>
+            </div>
+            <div class="footer-3-business">
+              <span class="footer-3s">|</span>
+              <span>사업자등록번호 119-86-91245</span>
+              <a href="#" class="footer-3-busi" rel="noreferrer">사업자정보확인</a>
+            </div>
+            <div class="footer-3-singo">
+              <span class="footer-3s">|</span>
+              <span class="foot-singo">통신판매업신고번호 제2018-서울서초-0580호</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <span>고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</span>
+          <a href="#" rel="noreferrer" class="foot-3-sev">서비스가입사실확인</a>
+        </div>
+
+        <div class="footer-3-img">
+          <div class="footer-3-img1">
+            <img src="https://assets.ohou.se/design-system/8f5b2c2e98ea1196.png" width="32px" height="32px" alt="isms 인증 마크" class="foot-3-1">
+            <div class="footer-3-img1-text">
+              <span>오늘의집 서비스 운영</span><br>
+              2021.09.08 ~ 2024.09.07
+            </div>
+          </div>
+
+          <div class="footer-3-img2">
+            <img src="https://assets.ohou.se/design-system/d5fb816a58bb6a06.png" width="32px" height="32px" alt="iso27001 인증 마크" class="foot-3-2">
+          </div>
+
+          <div class="footer-3-img3">
+            <a href="https://www.pipc.go.kr/np/cop/bbs/selectBoardArticle.do?bbsId=BS213&mCode=C040050000&nttId=8926" target="_blank" rel="nor" class="foot-3-3-a">
+              <img src="https://assets.ohou.se/design-system/ad1cf869a6c58058.png" width="32px" height="32px" alt="pcr 인증 마크" class="foot-3-3">
+            </a>
+          </div>
+        </div>
+      
+
+      <div>(주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록 판매한 상품은 판매자로서 책임을 부담합니다.</div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCBKtitA1RwY7F32rCniV1dA" target="_blank" rel="nor" data-testid="SocialLink-Youtube" class="foot-y">
+          <img src="https://i.postimg.cc/Gmcfjqfy/youtube-black-logo-icon-147044.png" class="foot-3-y">
+        </a>
+        <a href="https://www.instagram.com/todayhouse/" target="_blank" rel="nor" data-testid="SocialLink-Instagram" class="foot-y">
+          <img src="https://i.postimg.cc/8cSdXD81/instagram-black-logo-icon-147122.png" class="foot-3-y">
+        </a>
+        <a href="https://www.facebook.com/interiortoday" target="_blank" rel="nor" data-testid="SocialLink-Facebook" class="foot-y">
+          <img src="https://i.postimg.cc/DZqpwxnw/facebook-icon-137647.png" class="foot-3-y">
+        </a>
+        <a href="https://story.kakao.com/ch/bucketplace" target="_blank" rel="nor" data-testid="SocialLink-KakaoStory" class="foot-y">
+          <img src="https://ifh.cc/g/GGW3Rp.png" class="foot-3-y">
+        </a>
+        <a href="https://m.post.naver.com/my.nhn?memberNo=202156" target="_blank" rel="nor" data-testid="SocialLink-NaverPost" class="foot-y">
+          <img src="https://i.postimg.cc/sg4Nz6ff/naver-icon-icons-com-59879.png" class="foot-3-y">
+        </a>
+      </div>
+      <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved.</p>
+    </div>
+  </div>
+  </div>
+  </footer>
+</div>
+<script src="mayjs.js"></script>
+</body>
+</html>
